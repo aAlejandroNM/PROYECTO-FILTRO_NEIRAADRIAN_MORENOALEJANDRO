@@ -1,3 +1,44 @@
 body{
-    background-color: ;
+    background-color: #121212;
 }
+#barra_principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+/* #barra_principal    {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: top;
+
+} */
+#barra_busqueda{
+    background-color: #383838;
+    height: 100px;
+    width: 400px;
+    border-radius: 45px;
+}
+#carrito_compras, #cuenta{
+    background-color: #383838;
+    height: 100px;
+    width: 100px;
+    border-radius: 45px;
+}
+#barra_catalogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.botones_redirecciones{
+    display: flex;
+    background-color: #383838;
+    height: 100px;
+    width: 100px;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+
