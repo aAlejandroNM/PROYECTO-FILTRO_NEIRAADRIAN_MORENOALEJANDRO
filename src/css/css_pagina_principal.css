@@ -40,5 +40,29 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.lista_botones{
+    display: inline-flex;
+    flex-direction: row;
+}
+.imagenes_tabla{
+    height: 50px;
+    border-radius: 10px;
+}
+.botones_catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    height: 40px;
+    width: 150px;
+    border-radius: 45px;
+}
+.cabeceras_catalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenido_catalogo{
+    border-radius: 20px;
+}
 
