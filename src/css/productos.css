@@ -83,3 +83,32 @@ h2{
     margin-bottom: 5px;
     margin-left: 20px;
 }
+
+/* -----------ESTILOS TITULO PRODUCTOS */
+
+.titulo_azul{
+    color: #3197EB;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 3%;
+    padding-top: 0px;
+    padding-left: 3%;
+    font-size: 30px;
+    margin-bottom: 3%;
+    
+
+}
+
+.verificado{
+    width: 30px; 
+    height: 30px; 
+    margin-left: 5px;
+}
+span{
+    margin-left: 10%;
+}
+span strong{
+    color: #3197EB;
+}
