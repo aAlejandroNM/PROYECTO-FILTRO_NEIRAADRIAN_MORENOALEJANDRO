@@ -7,6 +7,84 @@
     <link rel="stylesheet" href="src/css/css_carrito.css">
 </head>
 <body>
+    <header>
+        <div id="warning" class="hidden">
+            <p>Esta página solo está disponible para dispositivos móviles.</p>
+        </div>
+        <nav id="barra_principal">
+            <a href="index.html">
+                <img  src="src/images/logo-Photoroom (1).png" alt="logo_empresa">
+            </a>
+            <div id="barra_busqueda">
+                <img style="height: 20px;" src="src/images/lupita.png" alt="">
+            </div>
+            <div id="carrito_compras">
+                <a href="carrito.html">
+                    <img src="src/images/carrito1.png" alt="Carrito de compras">
+                </a>
+            </div>
+            <div id="cuenta">
+                <img src="src/images/cuenta3.png" alt="cuenta">    
+            </div>
+        </nav>
+    </header>
+
+    <div class="boton_regresar">
+        <a href="">
+            <img style="height: 20px;" src="src/images/flecha.png" alt="">
+            Volver
+        </a>
+    </div>
+    <h2>Mi Carrito</h2>
+    <hr>
+    <main>
+        <div class="item_carrito">
+            <a href="#">
+                <img src="src/images/FS.jpg" alt="itemcarrito">
+            </a>
+            <div class="info">
+                <div class="nombre">
+                    Nombre NFT <img src="src/images/verificado.png" alt="verificado" class="verificado">
+                </div>
+                <div class="extra">
+                    información extra
+                </div>
+            </div>
+            <div class="precio">
+                0.34 ETH
+            </div>
+        </div>
+        <div class="carrito">
+            <div class="precio-total">
+                <div>Precio total</div>
+                <div class="precio">
+                    <span>0.34 ETH</span>
+                    <br>
+                    <span>$1'500.000</span>
+                </div>
+            </div>
+            <div class="metodo-pago">
+                <div>Metodo de pago</div>
+                <div class="opciones-pago">
+                    <div>
+                        <input type="radio" id="crypto" name="metodo_pago" value="crypto">
+                        <img style="height: 40px;" src="src/images/eth.png" alt="eth">
+                        <label for="crypto">Crypto</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta">
+                        <img  src="src/images/tarjeta.png" alt="tarjeta">
+                        <label for="tarjeta">Tarjeta Credito/Debito</label>
+                    </div>
+                </div>
+                <div class="crypto-text">Crypto</div>
+            </div>
+            <button class="btn-completar-compra">Completar Compra</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
