@@ -35,7 +35,7 @@ body {
     width: 200px;
     border-radius: 20px; 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 0 10px;
 }
@@ -83,25 +83,31 @@ body {
 
 #barra_catalogo {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
-    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px; /* Añade un espacio entre los botones */
-    padding: 10px; /* Añade un espacio alrededor de los botones */
+    gap: 5px;
+    padding: 10px;
 }
 
 /* Estilos para los botones de redirección */
+
+.botones_redirecciones a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1.2em; 
+}
+
 .botones_redirecciones {
     display: flex;
     background-color: #383838;
-    height: 40px; /* Ajusta la altura para que sea más pequeña y responsiva */
-    width: 22%; /* Haz que los botones ocupen un porcentaje del ancho disponible */
-    max-width: 100px; /* Establece un ancho máximo */
-    border-radius: 20px; /* Ajusta el radio de borde para hacer los botones más redondos */
+    height: 40px;
+    width: 22%;
+    max-width: 100px; 
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Añade un padding interno para el texto */
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    padding: 5px;
 }
 
 .botones_redirecciones h2, .botones_redirecciones h3 {
@@ -216,7 +222,11 @@ td, th {
 
 
 
-
+.botones_catalogo a{
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1.2em;
+}
 
 .botones_catalogo{
     display: flex;
@@ -254,21 +264,36 @@ td, th {
 
 
 footer {
-    background-color: #1C1C1C; /* Color rojo hexadecimal */
+    background-color: #1C1C1C; 
     bottom: 0;
     width: 100%;
     padding: 10px 0;
- /* Para el texto del copyright */
 }
 footer p{
     text-align: center;
 }
 .img_footer{
     height: 40px;
+    margin: 5px;
 }
 .redes{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .img_footer {
+        height: 30px;
+    }
+
+    .redes {
+        justify-content: space-around;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }
 
 

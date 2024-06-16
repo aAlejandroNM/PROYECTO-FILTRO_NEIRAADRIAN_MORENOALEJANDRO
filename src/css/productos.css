@@ -225,8 +225,24 @@ footer p{
 }
 .img_footer{
     height: 40px;
+    margin: 5px;
 }
 .redes{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .img_footer {
+        height: 30px;
+    }
+
+    .redes {
+        justify-content: space-around;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }
