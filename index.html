@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="src/css/css_pagina_principal.css">
 </head>
 <body>
+    <div id="warning" class="hidden">
+        <p>Esta página solo está disponible para dispositivos móviles.</p>
+    </div>
     <nav id="barra_principal">
         <a href="#">
             <img  src="src/images/logo-Photoroom (1).png" alt="logo_empresa">
         </a>
         <div id="barra_busqueda">
-            
+            <img style="height: 20px;" src="src/images/lupita.png" alt="">
         </div>
-        <div id="carrito_compras"></div>
-        <div id="cuenta"></div>
+        <div id="carrito_compras">
+            <a href="carrito.html">
+                <img src="src/images/carrito1.png" alt="Carrito de compras">
+            </a>
+        </div>
+        <div id="cuenta">
+            <img src="src/images/cuenta3.png" alt="cuenta">    
+        </div>
     </nav>
     <nav id="barra_catalogo">
         <div class="botones_redirecciones">
             <h3>Todos</h3>
         </div>
         <div class="botones_redirecciones">
-            <h2>Juegos</h2>
+            <h3>Juegos</h3>
         </div>
         <div class="botones_redirecciones">
-            <h2>Animes</h2>
+            <h3>Animes</h3>
         </div>
         <div class="botones_redirecciones">
-            <h2>Animes</h2>
+            <h3>Memes</h3>
         </div>
     </nav>
     <main>
@@ -49,13 +58,17 @@
     </main>
     <section>
         <div class="lista_botones">
-            <div class="botones_redirecciones"></div>
-            <div class="botones_redirecciones"></div>
+            <input type="radio" id="btn1" name="botones" class="boton_oculto" checked>
+            <label for="btn1" class="botones_redirecciones1">En tendencia</label>
+        
+            <input type="radio" id="btn2" name="botones" class="boton_oculto">
+            <label for="btn2" class="botones_redirecciones1">Principales</label>
         </div>
         <table>
             <tr>
                 <td>Top</td>
                 <td>Colecciones</td>
+                <td></td>
                 <td>Precio minimo</td>
                 <td>Volumen</td>
             </tr>
@@ -114,16 +127,45 @@
                 <a href="#">Ver todo</a>
             </div>
         </div>
-        <div class="contenido_catalago">
+        <div class="catalogo">
             <img src="src/images/FS.jpg" alt="toicansaopapito">
             <img src="src/images/fds.png" alt="">
+            <img src="src/images/imsaage.png" alt="">
         </div>
-
+        <div class="cabeceras_catalogo">
+            <h2>Tendencia Animes</h2>
+            <div class="botones_catalogo">
+                <a href="#">Ver todo</a>
+            </div>
+        </div>
+        <div class="catalogo">
+            <img src="src/images/FS.jpg" alt="toicansaopapito">
+            <img src="src/images/fds.png" alt="">
+            <img src="src/images/imsaage.png" alt="">
+        </div>
+        <div class="cabeceras_catalogo">
+            <h2>Tendencia Videojuegos</h2>
+            <div class="botones_catalogo">
+                <a href="#">Ver todo</a>
+            </div>
+        </div>
+        <div class="catalogo">
+            <img src="src/images/FS.jpg" alt="toicansaopapito">
+            <img src="src/images/fds.png" alt="">
+            <img src="src/images/imsaage.png" alt="">
+        </div>
     </section>
 
     <footer>
-        
-    </footer>
+        <p>@Copyright 2024</p>
+        <div class="redes_sociales">
+          <a href="tu-enlace-twitter" target="_blank"><img src="ruta-icono-twitter" alt="Twitter"></a>
+          <a href="tu-enlace-instagram" target="_blank"><img src="ruta-icono-instagram" alt="Instagram"></a>
+          <a href="tu-enlace-anchor" target="_blank"><img src="ruta-icono-anchor" alt="Anchor"></a>
+          <a href="tu-enlace-tiktok" target="_blank"><img src="ruta-icono-tiktok" alt="TikTok"></a>
+          <a href="tu-enlace-email"><img src="ruta-icono-email" alt="Email"></a>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

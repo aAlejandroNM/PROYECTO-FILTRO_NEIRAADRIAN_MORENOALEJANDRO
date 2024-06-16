@@ -1,53 +1,232 @@
-body{
+
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    
+}
+#barra_principal a img {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/* Estilos para la barra principal */
+#barra_principal {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
     background-color: #121212;
 }
-#barra_principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-}
-/* #barra_principal    {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: top;
 
-} */
-#barra_busqueda{
+/* Estilos para el logo */
+#barra_principal a {
+    display: block;
+    max-width: 100px; /* Ajusta el ancho máximo del logo */
+}
+
+/* Estilos para la barra de búsqueda */
+#barra_busqueda {
     background-color: #383838;
-    height: 100px;
-    width: 400px;
-    border-radius: 45px;
-}
-#carrito_compras, #cuenta{
-    background-color: #383838;
-    height: 100px;
-    width: 100px;
-    border-radius: 45px;
-}
-#barra_catalogo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-}
-.botones_redirecciones{
+    height: 40px; /* Reducimos la altura para dispositivos móviles */
+    width: 200px; /* Ancho fijo para la barra de búsqueda */
+    border-radius: 20px; /* Redondeamos los bordes */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    color: white;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+/* Estilos para los iconos de carrito y cuenta */
+#carrito_compras, #cuenta {
     background-color: #383838;
-    height: 100px;
-    width: 100px;
-    border-radius: 45px;
+    height: 40px; /* Reducimos la altura para dispositivos móviles */
+    width: 40px; /* Ancho fijo para los iconos */
+    border-radius: 50%; /* Hacemos los iconos redondos */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.lista_botones{
+
+#carrito_compras img, #cuenta img {
+    width: 20px; /* Ajusta el tamaño del icono */
+    height: 20px; /* Ajusta el tamaño del icono */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 460px) {
+    #barra_principal {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    #barra_busqueda {
+        width: 150px;
+    }
+
+    #carrito_compras, #cuenta {
+        width: 30px;
+        height: 30px;
+    }
+
+    #carrito_compras img, #cuenta img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+
+#barra_catalogo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    gap: 10px; /* Añade un espacio entre los botones */
+    padding: 10px; /* Añade un espacio alrededor de los botones */
+}
+
+/* Estilos para los botones de redirección */
+.botones_redirecciones {
+    display: flex;
+    background-color: #383838;
+    height: 40px; /* Ajusta la altura para que sea más pequeña y responsiva */
+    width: 22%; /* Haz que los botones ocupen un porcentaje del ancho disponible */
+    max-width: 100px; /* Establece un ancho máximo */
+    border-radius: 20px; /* Ajusta el radio de borde para hacer los botones más redondos */
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Añade un padding interno para el texto */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.botones_redirecciones h2, .botones_redirecciones h3 {
+    color: white;
+    margin: 0; /* Elimina el margen predeterminado de los encabezados */
+    font-size: 1em; /* Ajusta el tamaño de la fuente */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 460px) {
+    #barra_catalogo {
+        justify-content: center; /* Centra los botones cuando el espacio es reducido */
+    }
+
+    .botones_redirecciones {
+        height: 40px; /* Ajusta la altura para dispositivos móviles */
+        width: 45%; /* Ajusta el ancho a un porcentaje menor para dispositivos pequeños */
+        max-width: none; /* Elimina el ancho máximo en dispositivos pequeños */
+        margin-bottom: 10px; /* Añade un espacio inferior para separar las filas */
+    }
+
+    .botones_redirecciones h2, .botones_redirecciones h3 {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+}
+
+
+
+/* BOTONES EN TENDENCIA Y PRINCIPALES */
+
+.lista_botones {
     display: inline-flex;
     flex-direction: row;
 }
-.imagenes_tabla{
+
+.boton_oculto {
+    display: none;
+}
+
+.botones_redirecciones1 {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #1e1e1e; /* Estado inactivo */
+    color: grey;
+}
+
+#btn1:checked + .botones_redirecciones1,
+#btn2:checked + .botones_redirecciones1 {
+    background-color: #383838; /* Estado activo */
+    color: white;
+}
+
+
+
+
+/* ESTILOS CARRUSEL */
+
+
+
+.carousel-inner .carousel-item img {
+    border-radius: 20px; /* Ajusta el radio del borde redondo */
+    margin: 10px; /* Añade margen alrededor de las imágenes */
+}
+
+/* Ajuste de la velocidad de la animación */
+.carousel-inner .carousel-item {
+    transition: transform 2s ease; /* Ajusta el tiempo de la animación (aquí 1.5 segundos) */
+}
+
+
+
+
+
+
+
+
+/* -------------ESTILOS TABLAS------------- */
+
+
+
+
+
+
+
+.imagenes_tabla {
     height: 50px;
     border-radius: 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+/* tr:hover {
+    background-color: #f5f5f5;
+} */
+
+
+/* ---------- SECCIONES CATALOGO---------------- */
+
+
+
+
+
+
 .botones_catalogo{
     display: flex;
     justify-content: center;
@@ -65,4 +244,73 @@ body{
 .contenido_catalogo{
     border-radius: 20px;
 }
+.catalogo{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.catalogo img {
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    
+}
 
+
+/* ---------FOOTER--------- */
+
+
+footer {
+    background-color: #1C1C1C; /* Color rojo hexadecimal */
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+ /* Para el texto del copyright */
+}
+
+.redes_sociales{
+    
+}
+
+
+
+
+
+
+/* ---------Mensaje advertencia solo moviles ------------- */
+
+#mobile-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cuadro de advertencia */
+#warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+.hidden {
+    display: none;
+}
+
+/* Mostrar cuadro de advertencia en pantallas más anchas */
+@media only screen and (min-width: 470px) {
+    #mobile-content {
+        display: none;
+    }
+    #warning {
+        display: flex;
+    }
+}
