@@ -226,3 +226,24 @@ h2{
 .btn-completar-compra:hover {
     background-color: #218838;
 }
+
+/* ---------FOOTER--------- */
+
+
+footer {
+    background-color: #1C1C1C; /* Color rojo hexadecimal */
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+ /* Para el texto del copyright */
+}
+footer p{
+    text-align: center;
+}
+.img_footer{
+    height: 40px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}

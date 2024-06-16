@@ -260,11 +260,16 @@ footer {
     padding: 10px 0;
  /* Para el texto del copyright */
 }
-
-.redes_sociales{
-
+footer p{
+    text-align: center;
 }
-
+.img_footer{
+    height: 40px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
 
 
 
