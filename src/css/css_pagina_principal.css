@@ -112,25 +112,25 @@ body {
 
 .botones_redirecciones h2, .botones_redirecciones h3 {
     color: white;
-    margin: 0; /* Elimina el margen predeterminado de los encabezados */
-    font-size: 1em; /* Ajusta el tamaño de la fuente */
+    margin: 0; 
+    font-size: 1em;
 }
 
-/* Media queries para dispositivos móviles */
+
 @media (max-width: 460px) {
     #barra_catalogo {
-        justify-content: center; /* Centra los botones cuando el espacio es reducido */
+        justify-content: center; 
     }
 
     .botones_redirecciones {
-        height: 40px; /* Ajusta la altura para dispositivos móviles */
-        width: 45%; /* Ajusta el ancho a un porcentaje menor para dispositivos pequeños */
-        max-width: none; /* Elimina el ancho máximo en dispositivos pequeños */
-        margin-bottom: 10px; /* Añade un espacio inferior para separar las filas */
+        height: 40px;
+        width: 45%; 
+        max-width: none; 
+        margin-bottom: 10px; 
     }
 
     .botones_redirecciones h2, .botones_redirecciones h3 {
-        font-size: 0.9em; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+        font-size: 0.9em; 
     }
 }
 
@@ -153,31 +153,26 @@ body {
     padding: 10px 20px;
     margin-right: 5px;
     cursor: pointer;
-    background-color: #1e1e1e; /* Estado inactivo */
+    background-color: #1e1e1e; 
     color: grey;
 }
 
 #btn1:checked + .botones_redirecciones1,
 #btn2:checked + .botones_redirecciones1 {
-    background-color: #383838; /* Estado activo */
+    background-color: #383838;
     color: white;
 }
 
-
-
-
 /* ESTILOS CARRUSEL */
 
-
-
 .carousel-inner .carousel-item img {
-    border-radius: 20px; /* Ajusta el radio del borde redondo */
-    margin: 10px; /* Añade margen alrededor de las imágenes */
+    border-radius: 20px; 
+    margin: 10px; 
 }
 
 /* Ajuste de la velocidad de la animación */
 .carousel-inner .carousel-item {
-    transition: transform 2s ease; /* Ajusta el tiempo de la animación (aquí 1.5 segundos) */
+    transition: transform 2s ease;
 }
 
 
