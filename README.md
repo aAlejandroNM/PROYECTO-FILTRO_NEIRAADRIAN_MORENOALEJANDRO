@@ -7,7 +7,7 @@ fue diseñada solo para moviles.
 ## Contenido
 
 - [Vista Previa](#vista-previa)
-- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Maquetacion](##Maquetacion)
 - [Instalación](#instalación)
 - [Uso](#uso)
 - [Autores](#autores)
@@ -16,54 +16,25 @@ fue diseñada solo para moviles.
 
 Puedes ver la página en funcionamiento [aquí](https://kh81ql90-5501.use2.devtunnels.ms/carrito.html).
 
-## Estructura del Proyecto
+## Maquetacion
 
-El proyecto tiene la siguiente estructura de directorios y archivos:
-
-elite-vault/
-├── src/
-│ ├── css/
-│ │ ├──proximamente.css
-│ │ ├──css_carrito.css
-│ │ ├──productos.css
-│ │ └── css_pagina_principal.css
-│ ├── images/
-│ │ ├── logo-Photoroom (1).png
-│ │ ├── lupita.png
-│ │ ├── carrito1.png
-│ │ ├── cuenta3.png
-│ │ ├── nft.png
-│ │ ├── fds.png
-│ │ ├── memes/
-│ │ │ ├── FS.jpg
-│ │ │ ├── fokinworl.png
-│ │ │ ├── baneado.jpeg
-│ │ │ ├── lobo1.png
-│ │ │ ├── noc.png
-│ │ ├── animes/
-│ │ │ ├── toji.webp
-│ │ │ ├── eclipse.jpg
-│ │ │ ├── godhand.webp
-│ │ ├── juegos/
-│ │ │ ├── sekiro.jpg
-│ │ │ ├── sek.jpg
-│ │ │ ├── assasins.jpg
-├── index.html
-├── proximamente.html
-├── productos.html
-└── carrito.html
+![Vista Previa](src/images/maquetacion/2.jpg)
+![Vista Previa](src/images/maquetacion/3.jpg)
+![Vista Previa](src/images/maquetacion/4.jpg)
 
 ## Instalación
 
 Para usar este proyecto localmente, sigue estos pasos:
 
 1. Clona el repositorio:
+   ```sh
     [git clone https://github.com/tu-usuario/elite-vault.git](https://github.com/aAlejandroNM/PROYECTO-FILTRO_NEIRAADRIAN_MORENOALEJANDRO.git)
-
-2. Navega al directorio del proyecto:
+    ```
+3. Navega al directorio del proyecto:
+   ```sh
     cd elite-vault
-
-3. Abre `index.html` en tu navegador preferido.
+    ```
+4. Abre `index.html` en tu navegador preferido.
 
 ## Uso
 
@@ -74,9 +45,9 @@ y ver los productos destacados en las secciones de tendencia, para visulizar com
 
 ## Autores
 
-Alejandro Neira - [aAlejandroNM](https://github.com/aAlejandroNM)
+* **Alejandro Neira** - [aAlejandroNM](https://github.com/aAlejandroNM)
 
 Para cualquier pregunta o comentario, puedes contactarme a través de mi [email](adrian.neira@uptc.edu.co).
 
-
+---
 ¡Gracias por visitar Elite Vault!
